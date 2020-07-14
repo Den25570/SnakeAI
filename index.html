@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Import jquery -->
+	<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Import TensorFlow.js -->
+	<script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+	<!-- Import tfjs-vis -->
+	<script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.0.2/dist/tfjs-vis.umd.min.js"></script>
+
+	<script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+	<script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+
+	<script language="javascript" type="text/javascript" src="node_modules\chart.js\dist\Chart.js"></script>
+
+	<!-- Inner logic -->
+	<script language="javascript" type="text/javascript" src="geneticAlgorithm.js"></script>
+	<script language="javascript" type="text/javascript" src="neuralNetwork.js"></script>
+	<script language="javascript" type="text/javascript" src="snake.js"></script>
+	<script language="javascript" type="text/javascript" src="sketch.js"></script>
+	<script language="javascript" type="text/javascript" src="interface.js"></script>
+
+	<!--Style import-->
+	<link rel="stylesheet" href="style.css">
+	<title>Snake</title>
+</head>
+<body>
+	<div class = "main_container">
+		<div class="interface_container">
+			<button id = "generate_population">Generate Population</button>
+			<div class="population_info">
+				<div id="population_agents_count"></div>
+			</div>
+			<button id = "simulate_generation">Simulate Generation</button>
+			<input id = "generation_to_simulate" type="number" min="1" max ="100" value="1">
+			<div class="generation_info">
+				Generation: <span class="current_generation_number" id="generation"></span>
+			</div>
+			<button id = "show_best">Show Best Of Generation</button>
+			<div class="snake_info">	
+				<div>Steps left: <div id="steps_left"></div></div>
+				<div>Current score: <div id="current_score"></div></div>
+				<hr>
+				<div id="input1"></div>
+				<div id="input2"></div>
+				<div id="input3"></div>
+				<div id="input4"></div>
+				<div id="input5"></div>
+				<div id="input6"></div>
+				<div id="input7"></div>
+				<div id="input8"></div>
+				<div id="input9"></div>
+				<div id="input10"></div>
+				<div id="input11"></div>
+				<div id="input12"></div>
+				<div id="input13"></div>
+				<div id="input14"></div>
+				<div id="input15"></div>
+				<div id="input16"></div>
+				<div id="input17"></div>
+				<div id="input18"></div>
+				<div id="input19"></div>
+				<div id="input20"></div>
+				<div id="input21"></div>
+				<div id="input22"></div>
+				<div id="input23"></div>
+				<div id="input24"></div>
+				<div id="input25"></div>
+				<div id="input26"></div>
+				<div id="input27"></div>
+				<div id="input28"></div>
+				<hr>
+				<div id="output1"></div>
+				<div id="output2"></div>
+				<div id="output3"></div>
+				<div id="output4"></div>
+			</div>
+		</div>
+		<div class="game_field_container">
+			<table class="game_field" id="main_field"></table>
+		</div>
+	</div> 
+	<div class="chart">
+		<canvas id="myChart"></canvas>
+	</div> 
+</body>
+</html>

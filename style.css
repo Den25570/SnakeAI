@@ -1,0 +1,89 @@
+.main_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_container > div {
+    margin : 20px;
+}
+    
+.interface_container {
+    padding: 5px;
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.generation_info {
+    width: 75%;
+}
+
+.interface_container > * {
+    width: 90%;
+    align-self: center;
+}
+
+button {
+    width: 90%;
+    height: 50px;
+    margin-bottom: 10px;
+
+    align-self: center;
+
+    color: white;
+    background-color: darkblue;
+
+    border-radius: 20px;
+    border: none;
+
+    outline: none;
+}
+
+button:hover {
+    background-color: darkred;
+}
+  
+button:disabled,
+button[disabled]{
+    color: #666666;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    margin: 0px;
+    padding: 0px;
+    width: 20px;
+    padding-top: 3.333333%;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.apple {
+    background-color: red;
+}
+
+.snake {
+    background-color: blue;
+}
+
+.chart {
+    display: flex;
+    justify-content: space-around;
+}
+
+#myChart {
+    width: 90%;
+    height: 400px;
+}
+
+input {
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 10px;
+}
